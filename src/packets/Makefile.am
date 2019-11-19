@@ -8,7 +8,7 @@ AM_CPPFLAGS= -I${top_srcdir}/deps/libeasy-install/include/easy \
 LDADD=${top_srcdir}/deps/tbsys-install/lib/libtbsys.a
 
 AM_LDFLAGS=-lsnappy -lz -lrt -lpthread -ldl  ${GCOV_LIB}
-AM_CXXFLAGS=-Werror
+AM_CXXFLAGS=
 
 include_HEADERS=packet_factory.hpp \
 				packet.hpp \

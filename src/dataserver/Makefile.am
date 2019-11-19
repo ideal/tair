@@ -19,7 +19,7 @@ AM_CPPFLAGS= -I${top_srcdir}/deps/libeasy-install/include/easy \
 			 -I${top_srcdir}/src/client \
 			 -Imodules $(LDB_CPPFLAGS)
 
-AM_CXXFLAGS=-Werror
+AM_CXXFLAGS=
 
 if WITH_TCMALLOC
 AM_CPPFLAGS += -DWITH_TCMALLOC

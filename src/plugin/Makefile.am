@@ -6,7 +6,7 @@ AM_CPPFLAGS= -I${top_srcdir}/deps/tbsys-install/include \
 			 -I${top_srcdir}/src/storage \
 			 -I${top_srcdir}/src/dataserver
 
-AM_CXXFLAGS=-Werror
+AM_CXXFLAGS=
 
 LDADD=${top_srcdir}/deps/tbsys-install/lib/libtbsys.a \
 	  $(top_builddir)/src/client/.libs/libtairclientapi.a \

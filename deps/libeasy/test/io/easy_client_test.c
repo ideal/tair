@@ -275,6 +275,7 @@ TEST(easy_client, send)
     packet->len = sizeof(int);
     packet->chid = 1;
     addr = easy_inet_str_to_addr("xxx.xxx.xxx.xxx", 22);
+    easy_io_connect(addr, &io_handler, 0, NULL);
     s->status = EASY_CONNECT_SEND;
     signal(SIGALRM, easy_client_send_timeout);
     alarm(3);

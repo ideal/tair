@@ -17,7 +17,7 @@ AM_LDFLAGS= -rdynamic ${GCOV_LIB} \
 			-lz -lrt -lpthread \
 			-ldl
 
-AM_CXXFLAGS= -Werror
+AM_CXXFLAGS=
 
 LDADD= ${top_srcdir}/deps/tbsys-install/lib/libtbsys.a \
 	   ${top_srcdir}/deps/libeasy-install/lib64/libeasy.a \

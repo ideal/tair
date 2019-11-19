@@ -22,7 +22,7 @@ shm_source_list=cache_hashmap.cpp \
 				${top_srcdir}/src/common/util.cpp
 
 AM_LDFLAGS=-lpthread -lz -static-libgcc ${GCOV_LIB}
-AM_CXXFLAGS=-Werror -fPIC
+AM_CXXFLAGS=-fPIC
 lib_LTLIBRARIES=libmdb.la libmdb_c.la
 
 libmdb_la_SOURCES=${shm_source_list} \

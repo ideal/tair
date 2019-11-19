@@ -5,7 +5,7 @@ AM_CPPFLAGS= -I${top_srcdir}/deps/tbsys-install/include \
 			 -I${top_srcdir}/src/packets \
 			 -I${top_srcdir}/src
 
-AM_CXXFLAGS=-Werror
+AM_CXXFLAGS=
 
 AM_LDFLAGS= -rdynamic ${GCOV_LIB} \
       -lssl -lz -lrt -lpthread \

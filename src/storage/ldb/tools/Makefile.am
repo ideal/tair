@@ -10,7 +10,7 @@ AM_CPPFLAGS=-DWITH_TBUTIL \
 	    -I.
 
 AM_LDFLAGS=-lpthread ${GCOV_LIB}
-AM_CXXFLAGS= -Werror -fPIC
+AM_CXXFLAGS=-fPIC
 
 ldb_path=${top_srcdir}/src/storage/ldb
 ldb_libs=${ldb_path}/libldb.a \

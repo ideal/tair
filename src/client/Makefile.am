@@ -13,8 +13,8 @@ AM_CPPFLAGS=-I${top_srcdir}/src \
 	    -I${top_srcdir}/src/dataserver \
 	    -I${top_srcdir}/src/plugin
 
-AM_CXXFLAGS=-Werror -fPIC
-AM_CFLAGS=-Werror -fPIC
+AM_CXXFLAGS=-fPIC
+AM_CFLAGS=-fPIC
 AM_LDFLAGS=-lcrypto -lz
 
 multi_cluster_impl_source=tair_multi_cluster_client_impl.hpp \

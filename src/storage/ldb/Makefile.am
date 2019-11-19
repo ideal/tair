@@ -10,7 +10,7 @@ AM_CPPFLAGS= -DWITH_TBUTIL \
 			 -I${top_srcdir}/src/common \
 			 -I.
 
-AM_CXXFLAGS= -Werror -fPIC
+AM_CXXFLAGS=-fPIC
 
 if WITH_TCMALLOC
 AM_CPPFLAGS += -DWITH_TCMALLOC

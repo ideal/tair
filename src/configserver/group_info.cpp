@@ -2324,12 +2324,12 @@ void group_info::set_force_rebuild() {
 }
 
 void group_info::print_server_count() {
-    hash_map<uint64_t, int, hash<int> > m;
+    hash_map<uint64_t, int> m;
     for (uint32_t i = 0; i < server_table_manager.get_server_bucket_count();
          i++) {
         m[server_table_manager.hash_table[i]]++;
     }
-    for (hash_map<uint64_t, int, hash<int> >::iterator it = m.begin();
+    for (hash_map<uint64_t, int>::iterator it = m.begin();
          it != m.end(); ++it) {
         log_info("[%s] %s => %d", group_name,
                  tbsys::CNetUtil::addrToString(it->first).c_str(),
